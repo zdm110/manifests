@@ -42,7 +42,7 @@
     <linkfile dest="npu/rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="npu/device/rockchip/.BoardConfig.mk" src="rk3399pro-npu/BoardConfig.mk"/>
   </project>
-  <project name="deviceio_release" path="external/deviceio_release" revision="3c10cd8cc09400037c7371fd8c5008a301a8917a" upstream="master"/>
+  <project name="deviceio_release" path="external/deviceio_release" revision="57bf22def3ef873f19b581979f35d0c8c847ae17" upstream="master"/>
   <project name="distro" revision="cad1fcd74aef2214a715047cd3ac74fedbb664be" upstream="master"/>
   <project name="dl" path="buildroot/dl" revision="e0c676865ddbc673f3e7b2d17fb9d97f8a449a00" upstream="master"/>
   <project name="dl" path="npu/buildroot/dl" revision="e0c676865ddbc673f3e7b2d17fb9d97f8a449a00" upstream="master"/>
@@ -91,7 +91,7 @@
   <project name="rktoolkit" path="external/rktoolkit" revision="fc1ddcf4f804d1dbb55e2695a32b2aabe6016e8e" upstream="master"/>
   <project name="rktoolkit" path="npu/external/rktoolkit" revision="fc1ddcf4f804d1dbb55e2695a32b2aabe6016e8e" upstream="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="f4b03d11853791744a3963e42c4b2b3cba010f08" upstream="master"/>
-  <project name="rkwifibt" path="external/rkwifibt" revision="bcfe5dc630ec1a0d129101bc3abae208ba848ccc" upstream="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="58820c428d2ecae6aaf5e4f00997652b9479853a" upstream="master"/>
   <project name="rockx" path="external/rockx" revision="d0af63ebdbc1f8d496a6ba823bb8bbb382fd6316" upstream="master"/>
   <project name="rtc_demo" path="external/rtc_demo" revision="e1e8f6704a31b36982745f7627bc9b8959f54157" upstream="master"/>
   <project name="settings" path="app/qsetting" revision="4d0252a31aecc79d23dfd4696b674b522e630479" upstream="develop"/>
