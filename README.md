@@ -28,3 +28,10 @@ $ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle 
 $ repo sync --no-clone-bundle
 
 --
+
+The RK3399Pro chips
+
+$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m rk3399pro_linux.xml
+
+$ repo sync --no-clone-bundle
+
