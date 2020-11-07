@@ -24,6 +24,7 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"  upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="master"/>
   <project name="kernel" path="kernel" revision="develop-4.4"/>
+  <project name="kernel" path="kernel-4.19" revision="develop-4.19"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="rockchip-2.4.68" />
   <project name="libmali" path="external/libmali" revision="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="master"/>
