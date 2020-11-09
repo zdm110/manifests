@@ -35,6 +35,7 @@
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="master"/>
   <project name="rkbin" path="rkbin" revision="29mirror"/>
   <project name="rkssd" path="external/rkssd" revision="master"/>
+  <project name="rktoolkit" path="external/rktoolkit" revision="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
   <project name="settings" path="app/settings" revision="master"/>

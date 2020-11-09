@@ -57,6 +57,7 @@
   <project name="rknn_demo" path="external/rknn_demo" revision="master"/>
   <project name="rkscript" path="external/rkscript" revision="master"/>
   <project name="rkssd" path="external/rkssd" revision="master"/>
+  <project name="rktoolkit" path="external/rktoolkit" revision="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="master"/>
   <project name="settings" path="app/qsetting" revision="develop"/>
