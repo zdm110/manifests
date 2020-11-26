@@ -20,6 +20,14 @@ $ repo sync --no-clone-bundle
 
 --
 
+The RK1808 chips
+
+$ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m rk1808_linux.xml
+
+$ repo sync --no-clone-bundle
+
+--
+
 The RK3288 chips
 
 $ repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master -m rk3288_linux.xml
