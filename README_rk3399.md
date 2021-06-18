@@ -8,6 +8,6 @@ The RK3399 chips
 
 git clone https://github.com/rockchip-linux/repo 
 
-./repo/repo init -u https://github.com/rockchip-linux/manifests -b master -m rk3399_linux.xml
+./repo/repo init -u git@github.com:zdm110/manifests.git -b firefly-rk3399 -m rk3399_linux.xml
 
-repo sync -j4
+./repo/repo sync -j4
