@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="rk" revision="https://github.com/rockchip-linux/"/>
+  <remote name="rk" fetch="https://github.com/rockchip-linux/"/>
 
   <include name="yocto.xml" />
 
