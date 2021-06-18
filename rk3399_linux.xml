@@ -2,6 +2,7 @@
 <manifest>
 
   <remote name="rk" fetch="https://github.com/rockchip-linux/"/>
+  <default remote="rk" revision="master" sync-j="4" />
 
   <include name="yocto.xml" />
 
