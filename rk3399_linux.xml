@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+   <remote name="origin"
+          fetch="."
+          revision="refs/heads/master" />
+
   <remote name="rk" fetch="https://github.com/rockchip-linux/"/>
   <default remote="rk" revision="master" sync-j="4" />
 
@@ -26,13 +30,13 @@
   <project name="bin" remote="rk" path="external/security/bin" revision="master"/>
   <project name="bluez-alsa" remote="rk" path="external/bluez-alsa" revision="master"/>
   <project name="broadcom_bsa" remote="rk" path="external/broadcom_bsa" revision="master"/>
-  <project name="buildroot" remote="rk" path="buildroot" revision="rockchip/2018.02-rc3">
+  <project name="buildroot" remote="origin" path="buildroot" revision="firefly-rk3399">
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project name="camera_engine_rkisp" remote="rk" path="external/camera_engine_rkisp" revision="master"/>
   <project name="demo" remote="rk" path="app/demo" revision="master"/>
-  <project name="device-custom" remote="rk" path="device/rockchip" revision="master">
+  <project name="device-custom" remote="origin" path="device/rockchip" revision="firefly-rk3399">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -64,13 +68,13 @@
   <project name="softapDemo" remote="rk" path="external/softapDemo" revision="master"/>
   <project name="softapServer" remote="rk" path="external/softapServer" revision="master"/>
   <project name="tensorflow" remote="rk" path="external/tensorflow" revision="master"/>
-  <project name="tools" remote="rk" path="tools" revision="master">
+  <project name="tools" remote="origin" path="tools" revision="firefly-rk3399">
     <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk3399-config.cfg"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk3399-mkupdate.bat"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" remote="rk" path="u-boot" revision="next-dev"/>
+  <project name="u-boot" remote="origin" path="u-boot" revision="firefly-rk3399"/>
   <project name="uvc_app" remote="rk" path="external/uvc_app" revision="master"/>
 </manifest>
