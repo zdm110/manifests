@@ -38,7 +38,7 @@
   </project>
   <project name="camera_engine_rkisp" remote="rk" path="external/camera_engine_rkisp" revision="master"/>
   <project name="demo" remote="rk" path="app/demo" revision="master"/>
-  <project name="device-custom" remote="origin" path="device/rockchip" revision="firefly-rk3399">
+  <project name="device-custom" remote="origin" path="device/rockchip" revision="nanopi-t4">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
