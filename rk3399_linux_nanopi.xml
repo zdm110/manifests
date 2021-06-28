@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <remote name="origin"
+          fetch="."
+          revision="refs/heads/master" />
+
+  <remote name="rk" fetch="https://github.com/rockchip-linux/"/>
+  <default remote="rk" revision="master" sync-j="4" />
+
+  <remote name="coding" fetch="ssh://git@e.coding.net" />
+  <default remote="coding" revision="nanopi-t4" sync-j="4" />
+
+  <include name="yocto.xml" />
+
+  <project name="rockx" remote="rk" path="external/rockx" revision="master"/>
+  <project name="rkmedia" remote="rk" path="external/rkmedia" revision="master"/>
+  <project name="wifiAutoSetup" remote="rk" path="external/wifiAutoSetup" revision="master"/>
+  <project name="update_engine" remote="rk" path="external/update_engine" revision="master"/>
+  <project name="rtc_demo" remote="rk" path="external/rtc_demo" revision="master"/>
+  <project name="deviceio_release" remote="rk" path="external/deviceio_release" revision="master"/>
+  <project name="chromium" premote="rk" ath="external/chromium" revision="master"/>
+  <project name="avb" remote="rk" path="external/avb" revision="master"/>
+  <project name="libdrm-rockchip" remote="rk" path="external/libdrm" revision="rk33/mid/9.0/develop"/>
+  <project name="QLauncher" remote="rk" path="app/QLauncher" revision="develop"/>
+  <project name="multicamera" remote="rk" path="app/multicamera" revision="master"/>
+  <project name="qcamera" remote="rk" path="app/qcamera" revision="master"/>
+  <project name="qfm" remote="rk" path="app/qfm" revision="master"/>
+  <project name="DuerClientSDK" remote="rk" path="external/DuerClientSDK" revision="master_64bit"/>
+  <project name="qplayer" remote="rk" path="app/qplayer" revision="master"/>
+  <project name="multivideoplayer" remote="rk" path="app/multivideoplayer" revision="master"/>
+  <project name="alsa-config" remote="rk" path="external/alsa-config" revision="master"/>
+  <project name="bin" remote="rk" path="external/security/bin" revision="master"/>
+  <project name="bluez-alsa" remote="rk" path="external/bluez-alsa" revision="master"/>
+  <project name="broadcom_bsa" remote="rk" path="external/broadcom_bsa" revision="master"/>
+  <project name="buildroot" remote="origin" path="buildroot" revision="firefly-rk3399">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="camera_engine_rkisp" remote="rk" path="external/camera_engine_rkisp" revision="master"/>
+  <project name="demo" remote="rk" path="app/demo" revision="master"/>
+  <project name="device-custom" remote="origin" path="device/rockchip" revision="firefly-rk3399">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.target_product" src="rk3399"/>
+  </project>
+  <project name="docs" revision="master"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="master"/>
+  <project name="gstreamer-rockchip" remote="rk" path="external/gstreamer-rockchip" revision="master"/>
+  <project name="soit/rk3399-kernel/rk3399-kernel" remote="coding" path="kernel" revision="nanopi-t4"/>
+  <project name="kernel" remote="rk" path="kernel-4.19" revision="develop-4.19"/>
+  <project name="libmali" remote="rk" path="external/libmali" revision="master"/>
+  <project name="linux-rga" remote="rk" path="external/linux-rga" revision="master"/>
+  <project name="minigui" remote="rk" path="external/minigui" revision="master"/>
+  <project name="minigui_desktop" remote="rk" path="external/minigui_desktop" revision="master"/>
+  <project name="mpp" remote="rk" path="external/mpp" revision="release"/>
+  <project name="recovery" remote="rk" path="external/recovery" revision="develop"/>
+  <project name="rk-rootfs-build" remote="rk" path="debian" revision="master"/>
+  <project name="rk_pcba_test" remote="rk" path="external/rk_pcba_test" revision="master"/>
+  <project name="rk_tee_user" remote="rk" path="external/security/rk_tee_user" revision="master"/>
+  <project name="rkbin" remote="rk" path="rkbin" revision="master"/>
+  <project name="rknn-toolkit" remote="rk" path="external/rknn-toolkit" revision="master"/>
+  <project name="rknn_demo" remote="rk" path="external/rknn_demo" revision="master"/>
+  <project name="rkscript" remote="rk" path="external/rkscript" revision="master"/>
+  <project name="rkssd" remote="rk" path="external/rkssd" revision="master"/>
+  <project name="rktoolkit" remote="rk" path="external/rktoolkit" revision="master"/>
+  <project name="rkupdate" remote="rk" path="external/rkupdate" revision="master"/>
+  <project name="rkwifibt" remote="rk" path="external/rkwifibt" revision="master"/>
+  <project name="settings" remote="rk" path="app/qsetting" revision="develop"/>
+  <project name="softapDemo" remote="rk" path="external/softapDemo" revision="master"/>
+  <project name="softapServer" remote="rk" path="external/softapServer" revision="master"/>
+  <project name="tensorflow" remote="rk" path="external/tensorflow" revision="master"/>
+  <project name="tools" remote="origin" path="tools" revision="firefly-rk3399">
+    <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="u-boot" remote="origin" path="u-boot" revision="firefly-rk3399"/>
+  <project name="uvc_app" remote="rk" path="external/uvc_app" revision="master"/>
+</manifest>
