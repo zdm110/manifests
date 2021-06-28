@@ -9,7 +9,6 @@
   <default remote="rk" revision="master" sync-j="4" />
 
   <remote name="coding" fetch="ssh://git@e.coding.net" />
-  <default remote="coding" revision="nanopi-t4" sync-j="4" />
 
   <include name="yocto.xml" />
 
